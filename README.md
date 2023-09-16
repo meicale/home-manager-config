@@ -8,14 +8,14 @@ To initialize the template inside an existing project:
 
 ```shell
 nix flake init \
---template git+ssh://git@github.com/bill/home-manager-config
+--template git+ssh://git@github.com/meicale/home-manager-config
 ```
 
 To create a new project using the template:
 
 ```shell
 nix flake new \
---template git+ssh://git@github:bill/home-manager-config \
+--template git+ssh://git@github.com/meicale/home-manager-config \
 ./my-home-manager-config
 ```
 
