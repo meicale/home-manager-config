@@ -12,9 +12,9 @@
   outputs = { self, nixpkgs, home-manager }:
     let
       # Values you should modify
-      username = "change-me-plz"; # $USER
-      system = "aarch64-darwin";  # x86_64-linux, aarch64-multiplatform, etc.
-      stateVersion = "22.11";     # See https://nixos.org/manual/nixpkgs/stable for most recent
+      username = "bill"; # $USER
+      system = "x86_64-linux";  # x86_64-linux, aarch64-multiplatform, etc.
+      stateVersion = "23.05";     # See https://nixos.org/manual/nixpkgs/stable for most recent
 
       pkgs = import nixpkgs {
         inherit system;

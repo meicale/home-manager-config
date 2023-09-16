@@ -8,14 +8,14 @@ To initialize the template inside an existing project:
 
 ```shell
 nix flake init \
---template github:the-nix-way/home-manager-config-template
+--template git+ssh://git@github.com/bill/home-manager-config
 ```
 
 To create a new project using the template:
 
 ```shell
 nix flake new \
---template github:the-nix-way/home-manager-config-template \
+--template git+ssh://git@github:bill/home-manager-config \
 ./my-home-manager-config
 ```
 
@@ -29,6 +29,7 @@ Once those values are in place, build and run an activator executable, substitut
 
 ```shell
 nix build '.#homeConfigurations.${USER}.activationPackage'
+nix build '.#homeConfigurations.bill.activationPackage'
 ./result/activate
 ```
 
